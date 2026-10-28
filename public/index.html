@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logistics Service Management</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">LS</div>
+          <div>
+            <h1>Logistics</h1>
+            <p>Operations Hub</p>
+          </div>
+        </div>
+
+        <nav>
+          <a class="nav-item active" href="#">Overview</a>
+          <a class="nav-item" href="#">Shipments</a>
+          <a class="nav-item" href="#">Fleet</a>
+          <a class="nav-item" href="#">Warehouse</a>
+          <a class="nav-item" href="#">Analytics</a>
+        </nav>
+      </aside>
+
+      <main class="main-panel">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Operations dashboard</p>
+            <h2>Logistics Command Center</h2>
+          </div>
+          <button class="primary-btn">+ New Shipment</button>
+        </header>
+
+        <section class="stats-grid" id="stats-grid"></section>
+
+        <section class="content-grid">
+          <div class="panel wide-panel">
+            <div class="panel-header">
+              <h3>Shipment Activity</h3>
+              <span>Live</span>
+            </div>
+            <div class="bar-chart" id="bar-chart"></div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-header">
+              <h3>Route Status</h3>
+              <span>Updated</span>
+            </div>
+            <div id="route-list" class="list"></div>
+          </div>
+        </section>
+
+        <section class="content-grid bottom-grid">
+          <div class="panel">
+            <div class="panel-header">
+              <h3>Fleet Overview</h3>
+              <span>Vehicles</span>
+            </div>
+            <div id="fleet-list" class="list"></div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-header">
+              <h3>Inventory</h3>
+              <span>Warehouse</span>
+            </div>
+            <div id="inventory-list" class="list"></div>
+          </div>
+        </section>
+
+        <section class="panel shipments-panel">
+          <div class="panel-header">
+            <h3>Active Shipments</h3>
+            <span id="shipment-count">0</span>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Customer</th>
+                <th>Route</th>
+                <th>Status</th>
+                <th>Vehicle</th>
+                <th>ETA</th>
+                <th>Value</th>
+              </tr>
+            </thead>
+            <tbody id="shipment-table-body"></tbody>
+          </table>
+        </section>
+      </main>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
