@@ -1,41 +1,81 @@
 # Logistics Service Management
 
-A ready-to-use logistics operations dashboard built with Expo and React Native.
+A production-ready starter logistics dashboard app built with Expo and React Native.
 
 ## Features
-- Shipment overview
-- Route monitoring
-- Vehicle and warehouse summary
-- Clean dashboard UI
-- Mobile-first design for quick use on Android/iOS
+- Shipment dashboard overview
+- Fleet and route monitoring
+- Inventory tracking panel
+- Modern mobile-first UI
+- Ready for Expo Android / iOS / web deployment
 
-## Getting started
+## Run locally
 
-### 1. Install dependencies
+### 1) Install dependencies
 ```bash
 npm install
 ```
 
-### 2. Run the app
+### 2) Start the Expo app
 ```bash
 npm start
 ```
 
-Then choose:
-- Android: `npm run android`
-- iOS: `npm run ios`
-- Web: `npm run web`
+Then choose one of these:
+```bash
+npm run android
+npm run ios
+npm run web
+```
+
+## Build for deployment
+
+### Install Expo EAS CLI globally
+```bash
+npm install -g eas-cli
+```
+
+### Login to Expo
+```bash
+eas login
+```
+
+### Build for Android
+```bash
+eas build --platform android
+```
+
+### Build for iOS
+```bash
+eas build --platform ios
+```
+
+### Export web bundle
+```bash
+npm run build:web
+```
 
 ## Project structure
 ```bash
 .
 ├── App.js
 ├── app.json
-├── babel.config.js
+├── eas.json
 ├── package.json
 ├── README.md
-└── .gitignore
+├── .gitignore
+└── node_modules/
 ```
 
 ## Notes
-This project is ready for local Expo development and can be extended with real APIs, cart/route management, and admin screens.
+This app is prepared for Expo deployment and can be extended with:
+- authentication and admin login
+- real-time tracking APIs
+- database integration
+- route optimization
+- driver and warehouse management
+
+## Typical deployment targets
+- Expo Go for testing
+- Google Play / App Store via EAS Build
+- Web deployment via Expo web export or a host like Netlify/Vercel

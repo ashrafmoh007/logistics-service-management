@@ -5,16 +5,16 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "userInterfaceStyle": "light",
-    "splash": {
-      "backgroundColor": "#EAF2FF"
-    },
+    "backgroundColor": "#F4F7FB",
     "assetBundlePatterns": [
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ashrafmoh.logisticsservicemanagement"
     },
     "android": {
+      "package": "com.ashrafmoh.logisticsservicemanagement",
       "adaptiveIcon": {
         "backgroundColor": "#EAF2FF"
       }
