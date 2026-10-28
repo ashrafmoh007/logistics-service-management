@@ -1,0 +1,26 @@
+{
+  "expo": {
+    "name": "Logistics Service Management",
+    "slug": "logistics-service-management",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#EAF2FF"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#EAF2FF"
+      }
+    },
+    "web": {
+      "bundler": "metro"
+    }
+  }
+}
